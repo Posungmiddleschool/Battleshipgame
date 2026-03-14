@@ -1,5 +1,7 @@
-from graphics import graphics
+from graphic import graphics
 import matplotlib.pyplot as plt
+'''그래픽 초기 세팅'''
+graphics()
 '''맷플롯립을 사용하기 위해 각각 2개의 리스트를 만들었습니다.'''
 player1_battleship_list_x = []
 player1_battleship_list_y = []
