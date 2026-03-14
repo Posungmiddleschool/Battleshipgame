@@ -1,6 +1,8 @@
 from graphic import graphics
 import logic
 import matplotlib.pyplot as plt
+'''배틀필드 사용'''
+
 '''그래픽 초기 세팅'''
 graphics()
 '''맷플롯립을 사용하기 위해 각각 2개의 리스트를 만들었습니다.'''
@@ -21,11 +23,11 @@ for i in range (4):
     start_x = int(player1number[0])
     start_y = int(player1number[1])
     if player1putmethod == "가로":
-        for i in (size):
+        for i in range (size):
             player1_battleship_list_x.append(start_x + i)
             player1_battleship_list_y.append(start_y)
     else:
-        for i in (size):
+        for i in range (size):
             player1_battleship_list_x.append(start_x + i)
             player1_battleship_list_y.append(start_y)
     size += 1
@@ -58,3 +60,5 @@ while gameover == 0:
             plt.xlabel('x')
             plt.ylabel('y')        
             plt.show()
+            continue
+        
