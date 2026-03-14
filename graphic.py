@@ -6,4 +6,5 @@ def graphics():
   ax.set_xticks(range(11))
   ax.set_yticks(range(11))
   ax.set_facecolor('#4166F5')
+  ax.grid(True, color='black', alpha=0.3)
   
