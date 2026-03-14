@@ -1,4 +1,5 @@
 def graphics():
+  fig, ax = plt.subplots(figsize=(7, 7))
   plt.style.use('dark_background')
   ax.set.title('BATTLESHIP GAME')
   ax.set_xticks(range(11))
