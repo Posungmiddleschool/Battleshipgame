@@ -9,7 +9,7 @@ player2_battleship_list_x=[]
 player2_battleship_list_y=[]
 size = 1
 '''함선 추가하는 코드입니다.'''
-for i in range (0,3):
+for i in range (0,4):
     size = size + 1
     player1number = input("Player 1, 너의 Battleship을 어디에 놓을 것이니 두자리 자연수로 입력")
     player1putmethod = input("Player 1, 너의 Battleship을 가로로 놓을 것이니 세로로 놓을 것이니")
@@ -24,7 +24,7 @@ for i in range (0,3):
             player1_battleship_list_x.append(int(player1number[0]))
             player1_battleship_list_y.append(int(player1number[1]) + repeat)
 size = 1
-for i in range (0,3):
+for i in range (0,4):
     size = size + 1
     player2number = input("Player 2, 너의 Battleship을 어디에 놓을 것이니 두자리 자연수로 입력")
     player2putmethod = input("Player 2, 너의 Battleship을 가로로 놓을 것이니 세로로 놓을 것이니")
@@ -45,7 +45,7 @@ while gameover == 0:
     if turn == 0:
         reply = input("어느 위치를 공격할거니? 두자리 자연수로 입력해. 만약 너가 모르겠다면 위치 보기로 너 함선의 위치를 알 수 있어.")
         if reply == "위치 보기":
-            plt.scatter(player1_battleship_list_x, player1_battleship_list_y)
+            plt.scatter(player1_battleship_list_x, player1_battleship_list_y, marker = 'x')
             plt.xlabel('x')
             plt.ylabel('y')        
             plt.show()
