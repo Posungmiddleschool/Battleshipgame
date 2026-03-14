@@ -1,3 +1,4 @@
+from graphics import graphics
 import matplotlib.pyplot as plt
 '''맷플롯립을 사용하기 위해 각각 2개의 리스트를 만들었습니다.'''
 player1_battleship_list_x = []
