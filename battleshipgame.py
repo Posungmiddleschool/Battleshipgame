@@ -45,7 +45,7 @@ while gameover == 0:
     if turn == 0:
         reply = input("어느 위치를 공격할거니? 두자리 자연수로 입력해. 만약 너가 모르겠다면 위치 보기로 너 함선의 위치를 알 수 있어.")
         if reply == "위치 보기":
-            plt.scatter(player1_battleship_list_x, player1_battleship_list_y, marker = 'x')
+            plt.scatter(player1_battleship_list_x, player1_battleship_list_y)
             plt.xlabel('x')
             plt.ylabel('y')        
             plt.show()
