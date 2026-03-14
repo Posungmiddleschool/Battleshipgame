@@ -29,18 +29,20 @@ for i in range (4):
             player1_battleship_list_x.append(start_x + i)
             player1_battleship_list_y.append(start_y)
     size += 1
-for i in range (0,4):
-    size = size + 1
+
+size = 2
+for i in range (4):
     player2number = input("Player 2, 너의 Battleship을 어디에 놓을 것이니 두자리 자연수로 입력: ")
     player2putmethod = input("Player 2, 너의 Battleship을 가로 또는 세로로 놓을것인지 선택: ")
+    start_x = int(player1number[0])
+    start_y = int(player1number[1])
     if player2putmethod == "가로":
-        repeat = 0
         for i in (0, size):
-            player2_battleship_list_x.append(int(player2number[0])+ repeat)
-            player2_battleship_list_y.append(int(player2number[1]))
+            player2_battleship_list_x.append(start_x)
+            player2_battleship_list_y.append(start_y + i)
     else:
         repeat = 0
-        player2_battleship_list_x.append(int(player2number[0]))
+        player2_battleship_list_x.append(start_x)
         player2_battleship_list_y.append(int(player2number[1]) + repeat)
 size = 1
 gameover = 0
