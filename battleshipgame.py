@@ -10,26 +10,25 @@ player1_battleship_list_x = []
 player1_battleship_list_y = []
 player2_battleship_list_x=[]
 player2_battleship_list_y=[]
-size = 1
+size = 2
 '''함선 추가하는 코드입니다.'''
 
-for i in range (0,4):
+for i in range (4):
     '''size만큼 반복하여 리스트에 좌표를 추가하여 각각 길이가 2,3,4,5인 함선을 추가하려고 합니다.'''
     '''코드 로직 오류가 있는 것 같으니 수정해주세요.'''
-    size = size + 1
     player1number = input("Player 1, 너의 Battleship을 어디에 놓을 것이니 두자리 자연수로 입력: ")
     player1putmethod = input("Player 1, 너의 Battleship을 가로 또는 세로로 놓을것인지 선택: ")
+    start_x = int(player1number[0])
+    start_y = int(player1number[1])
     if player1putmethod == "가로":
-        repeat = 0
-        for i in (0, size):
-            player1_battleship_list_x.append(int(player1number[0]) + repeat)
-            player1_battleship_list_y.append(int(player1number[1]))
-        repeat = repeat + 1
+        for i in (size):
+            player1_battleship_list_x.append(start_x + i)
+            player1_battleship_list_y.append(start_y)
     else:
-        for i in (0,size):
-            player1_battleship_list_x.append(int(player1number[0]))
-            player1_battleship_list_y.append(int(player1number[1]) + repeat)
-size = 1
+        for i in (size):
+            player1_battleship_list_x.append(start_x + i)
+            player1_battleship_list_y.append(start_y)
+    size += 1
 for i in range (0,4):
     size = size + 1
     player2number = input("Player 2, 너의 Battleship을 어디에 놓을 것이니 두자리 자연수로 입력: ")
