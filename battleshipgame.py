@@ -1,4 +1,5 @@
 from graphic import graphics
+import logic
 import matplotlib.pyplot as plt
 '''그래픽 초기 세팅'''
 graphics()
