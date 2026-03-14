@@ -60,11 +60,14 @@ while gameover == 0:
             plt.xlabel('x')
             plt.ylabel('y')        
             plt.show()
-            continue
         '''공격할 x좌표와 y좌표 설정'''
         else:
             attackx = int(reply[0])
             attacky = int(reply[1])
+            for i in range(len(player2_battleship_list_x)):
+                if player2_battleship_list_x[i] == attackx and player2_battleship_list_y == attacky:
+                    print("공격에 성공하였습니다!")
+            
     else:
         reply = input("어느 위치를 공격할거니? 두자리 자연수로 입력해. 만약 너가 모르겠다면 위치 보기로 너 함선의 위치를 알 수 있어.")
         if reply == "위치 보기":
@@ -72,6 +75,4 @@ while gameover == 0:
             plt.xlabel('x')
             plt.ylabel('y')        
             plt.show()
-            continue
-    
         
