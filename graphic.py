@@ -1,3 +1,7 @@
 def graphics():
   plt.style.use('dark_background')
+  ax.set.title('BATTLESHIP GAME')
+  ax.set_xticks(range(11))
+  ax.set_yticks(range(11))
+  ax.set_facecolor('#4166F5')
   
