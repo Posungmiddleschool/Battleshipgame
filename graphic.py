@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 def graphics():
   fig, ax = plt.subplots(figsize=(7, 7))
   plt.style.use('dark_background')
