@@ -61,6 +61,7 @@ while gameover == 0:
             plt.ylabel('y')        
             plt.show()
         '''공격할 x좌표와 y좌표 설정'''
+
         attackx = int(reply[0])
         attacky = int(reply[1])
         turn = 1
@@ -74,4 +75,3 @@ while gameover == 0:
         attackx = int(reply[0])
         attacky = int(reply[1])
         turn = 0
-
