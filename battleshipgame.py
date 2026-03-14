@@ -1,4 +1,5 @@
 from graphic import graphics
+import sys
 import logic
 import matplotlib.pyplot as plt
 '''배틀필드 사용'''
@@ -67,6 +68,16 @@ while gameover == 0:
             for i in range(len(player2_battleship_list_x)):
                 if player2_battleship_list_x[i] == attackx and player2_battleship_list_y == attacky:
                     print("공격에 성공하였습니다!")
+                    player2_battleship_list_x.pop(i)
+                    player2_battleship_list_y.pop(i)
+                    turn = 1
+                    if len(player2_battleship_list_x) == 0:
+                        print("Player 2 승리!")
+                        sys.exit()
+                else:
+                    print("공격에 실패하셨습니다!")
+                    turn = 1
+                
             
     else:
         reply = input("어느 위치를 공격할거니? 두자리 자연수로 입력해. 만약 너가 모르겠다면 위치 보기로 너 함선의 위치를 알 수 있어.")
