@@ -16,8 +16,8 @@ for i in range (0,4):
     '''size만큼 반복하여 리스트에 좌표를 추가하여 각각 길이가 2,3,4,5인 함선을 추가하려고 합니다.'''
     '''코드 로직 오류가 있는 것 같으니 수정해주세요.'''
     size = size + 1
-    player1number = input("Player 1, 너의 Battleship을 어디에 놓을 것이니 두자리 자연수로 입력")
-    player1putmethod = input("Player 1, 너의 Battleship을 가로로 놓을 것이니 세로로 놓을 것이니")
+    player1number = input("Player 1, 너의 Battleship을 어디에 놓을 것이니 두자리 자연수로 입력: ")
+    player1putmethod = input("Player 1, 너의 Battleship을 가로 또는 세로로 놓을것인지 선택: ")
     if player1putmethod == "가로":
         repeat = 0
         for i in (0, size):
@@ -31,8 +31,8 @@ for i in range (0,4):
 size = 1
 for i in range (0,4):
     size = size + 1
-    player2number = input("Player 2, 너의 Battleship을 어디에 놓을 것이니 두자리 자연수로 입력")
-    player2putmethod = input("Player 2, 너의 Battleship을 가로로 놓을 것이니 세로로 놓을 것이니")
+    player2number = input("Player 2, 너의 Battleship을 어디에 놓을 것이니 두자리 자연수로 입력: ")
+    player2putmethod = input("Player 2, 너의 Battleship을 가로 또는 세로로 놓을것인지 선택: ")
     if player2putmethod == "가로":
         repeat = 0
         for i in (0, size):
