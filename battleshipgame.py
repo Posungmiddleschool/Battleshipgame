@@ -1,4 +1,4 @@
-import matplotlib as plt
+import matplotlib.pyplot as plt
 '''맷플롯립을 사용하기 위해 각각 2개의 리스트를 만들었습니다.'''
 player1_battleship_list_x = []
 player1_battleship_list_y = []
@@ -15,10 +15,11 @@ for i in range (0,3):
         for i in (1, size):
             player1_battleship_list_x.append(int(player1number[0]) + repeat)
             player1_battleship_list_y.append(int(player1number[1]))
+        repeat = repeat + 1
     else:
-        repeat = 0
-        player1_battleship_list_x.append(int(player1number[0]))
-        player1_battleship_list_y.append(int(player1number[1]) + repeat)
+        for i in (1,size):
+            player1_battleship_list_x.append(int(player1number[0]))
+            player1_battleship_list_y.append(int(player1number[1]) + repeat)
 size = 1
 for i in range (0,3):
     size = size + 1
@@ -32,7 +33,7 @@ for i in range (0,3):
     else:
         repeat = 0
         player2_battleship_list_x.append(int(player2number[0]))
-        player2_battleship_list_y.append(int(player2number[1] + repeat))
+        player2_battleship_list_y.append(int(player2number[1]) + repeat)
 size = 1
 gameover = 0
 turn = 0
