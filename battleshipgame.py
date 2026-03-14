@@ -46,6 +46,8 @@ size = 1
 gameover = 0
 turn = 0
 
+'''적의 모든 함선이 격침되면 player1 스일시 gameover을 1, player2승리시 2로 설정해 주세요.'''
+'''turn변수는 각각 0과 1로 정해 player1과 player2의 차례를 나타내는걸로 쓰려고 합니다.'''
 while gameover == 0:
     if turn == 0:
         reply = input("어느 위치를 공격할거니? 두자리 자연수로 입력해. 만약 너가 모르겠다면 위치 보기로 너 함선의 위치를 알 수 있어.")
