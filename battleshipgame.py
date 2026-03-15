@@ -1,4 +1,5 @@
 from graphic import graphics
+import sys
 import logic
 import matplotlib.pyplot as plt
 '''배틀필드 사용'''
@@ -54,7 +55,7 @@ turn = 0
 '''turn변수는 각각 0과 1로 정해 player1과 player2의 차례를 나타내는걸로 쓰려고 합니다.'''
 while gameover == 0:
     if turn == 0:
-        reply = input("어느 위치를 공격할거니? 두자리 자연수로 입력해. 만약 너가 모르겠다면 위치 보기로 너 함선의 위치를 알 수 있어.")
+        reply = input("Player 1, 어느 위치를 공격할거니? 두자리 자연수로 입력해. 만약 너가 모르겠다면 위치 보기로 너 함선의 위치를 알 수 있어.")
         if reply == "위치 보기":
             plt.scatter(player1_battleship_list_x, player1_battleship_list_y)
             plt.xlabel('x')
@@ -68,7 +69,7 @@ while gameover == 0:
     else:
         reply = input("어느 위치를 공격할거니? 두자리 자연수로 입력해. 만약 너가 모르겠다면 위치 보기로 너 함선의 위치를 알 수 있어.")
         if reply == "위치 보기":
-            plt.scatter(player1_battleship_list_x, player1_battleship_list_y)
+            plt.scatter(player2_battleship_list_x, player2_battleship_list_y)
             plt.xlabel('x')
             plt.ylabel('y')        
             plt.show()
