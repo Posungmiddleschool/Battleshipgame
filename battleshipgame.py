@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from graphic import graphics
 
 BOARD_SIZE = 10
 
@@ -61,6 +62,7 @@ def place_ships(player_name):
     return occupied_positions
 
 def show_positions(player_name, ship_positions, hit_positions=None, miss_positions=None):
+    graphics()
     if hit_positions is None:
         hit_positions = []
     if miss_positions is None:
