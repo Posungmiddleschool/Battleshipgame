@@ -13,6 +13,8 @@ Required Python Packages
 1. Matplotlib
 
 Code
-1. battleshipgame.py (Contributor: 안지훈, 곽대운, 정지오, 이상곤, 손정호, 정은수)
+1. battleshipgame.py (Contributor: 곽대윤, 안지훈, 정지오, 이상곤, 손정호, 정은수)
 2. graphics.py (Contributor: 안지훈, 이상곤)
 3. logic.py (Contributor: 손정호, 정은수, 정지오, 곽대윤)
+
+* 코드를 직접 작성하였거나 알고리즘 개발에 직접적으로 참여하였어도 commit을 직접 하지 않으면 Contributor에 입력되지 않기에 실제 프로젝트에 참여한 사람들과 Gtihub Contributor들은 다를 수 있음.
