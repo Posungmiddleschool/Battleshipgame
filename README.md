@@ -8,3 +8,11 @@ Battleship 게임
 >2차원 리스트를 입력하면 리스트 1개로도 matplotlib를 사용할 수 있을 줄 알았는데, 아니더라고요. 리스트 2개를 만들고 대조를 해보는 코드를 짜는 것은 고되었지만, 결과물이 멋져서 기쁩니다. 프로그램들을 만들면서 뜻깊게 수학적 알고리즘들을 탐구해보았어요. -*안지훈*
 
 (기타 등등)
+
+Required Python Packages
+1. Matplotlib
+
+Code
+1. battleshipgame.py (Contributor: 안지훈, 곽대운, 정지오, 이상곤, 손정호, 정은수)
+2. graphics.py (Contributor: 안지훈, 이상곤)
+3. logic.py (Contributor: 손정호, 정은수, 정지오, 곽대윤)
