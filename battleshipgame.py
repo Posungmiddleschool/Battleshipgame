@@ -62,45 +62,17 @@ while gameover == 0:
             plt.ylabel('y')        
             plt.show()
         '''공격할 x좌표와 y좌표 설정'''
-        else:
-            attackx = int(reply[0])
-            attacky = int(reply[1])
-            hit = False
-            for i in range(len(player2_battleship_list_x)):
-                if player2_battleship_list_x[i] == attackx and player2_battleship_list_y == attacky:
-                    hit = True
-                    print("공격에 성공하였습니다!")
-                    player2_battleship_list_x.pop(i)
-                    player2_battleship_list_y.pop(i)
-                    
-            if hit and len(player2_battleship_list_x) == 0:
-                print("Player 1 승리!")
-                        gameover = 1
-                        sys.exit()
-            if not hit:
-                print("공격에 실패하셨습니다!")
 
-            turn = 1
-            
-        else:
-        reply = input("Player 2, 어느 위치를 공격할거니? 두자리 자연수로 입력해. 만약 너가 모르겠다면 위치 보기로 너 함선의 위치를 알 수 있어.")
+        attackx = int(reply[0])
+        attacky = int(reply[1])
+        turn = 1
+    else:
+        reply = input("어느 위치를 공격할거니? 두자리 자연수로 입력해. 만약 너가 모르겠다면 위치 보기로 너 함선의 위치를 알 수 있어.")
         if reply == "위치 보기":
             plt.scatter(player2_battleship_list_x, player2_battleship_list_y)
             plt.xlabel('x')
             plt.ylabel('y')        
             plt.show()
-        else:
-        for i in range(len(player1_battleship_list_x)):
-                if player2_battleship_list_x[i] == attackx and player2_battleship_list_y == attacky:
-                    print("공격에 성공하였습니다!")
-                    player1_battleship_list_x.pop(i)
-                    player1_battleship_list_y.pop(i)
-                    turn = 0
-                    if len(player1_battleship_list_x) == 0:
-                        print("Player 2 승리!")
-                        gameover = 2
-                        sys.exit()
-                else:
-                    print("공격에 실패하셨습니다!")
-                    turn = 0
-                
+        attackx = int(reply[0])
+        attacky = int(reply[1])
+        turn = 0
